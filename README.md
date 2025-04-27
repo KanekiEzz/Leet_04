@@ -1,4 +1,4 @@
-# microshell-42
+# Exam Rank 03: 1337_microshell_42 🎓💻
 
 **If someone has a solution with less code let me know ;)**
 
