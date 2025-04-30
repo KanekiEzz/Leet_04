@@ -1,4 +1,4 @@
- #include <sys/wait.h>
+#include <sys/wait.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +17,7 @@ int cd(char **av, int i)
 {
     if (i != 2)
         return err("error: cd: bad arguments\n"), 1;
-    if(chdir(av[i]) == -1)
+    if(av[i] && chdir(av[i]) == -1)
         return err("error: cd: cannot change directory to "), err(av[i]), err("\n"), 1;
     return(0);
 }
